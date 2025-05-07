@@ -1,0 +1,12 @@
+flutter_launcher_icons:
+  android: true
+  ios: true
+  windows:
+    generate: true
+  image_path: "assets/icon/app_icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icon/app_icon.png" # Используем то же изображение для переднего плана
+  min_sdk_android: 21
+  web:
+    generate: false
+  remove_alpha_ios: true

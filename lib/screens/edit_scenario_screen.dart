@@ -54,10 +54,9 @@ class _EditScenarioScreenState extends State<EditScenarioScreen> {
       if (_scenario != null) {
         _nameController.text = _scenario!.name;
         _descriptionController.text = _scenario!.description;
-        _actions = List.from(_scenario!.actions);
-        _isActive = _scenario!.isActive;
+        _actions = List.from(_scenario!.actions);        _isActive = _scenario!.isActive;
         _selectedColor = _scenario!.color;
-        _selectedIcon = IconData(_scenario!.iconCodePoint, fontFamily: _scenario!.iconFontFamily);
+        _selectedIcon = const IconData(0xe0f7, fontFamily: 'MaterialIcons');  // Используем константное значение
         _isEditMode = true;
       }
     } else {

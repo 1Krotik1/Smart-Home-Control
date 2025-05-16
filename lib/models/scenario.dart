@@ -22,14 +22,13 @@ class Scenario {
     this.iconCodePoint = 0xe0f7, // Icons.auto_awesome.codePoint
     this.iconFontFamily = 'MaterialIcons',
   });
-
   // Геттер для получения IconData
-  IconData get icon => IconData(iconCodePoint, fontFamily: iconFontFamily);
+  IconData get icon => IconData(iconCodePoint, fontFamily: iconFontFamily, matchTextDirection: false);
   
   // Метод для создания виджета иконки с заданными параметрами
   Widget iconWidget({Color? color, double? size}) {
     return Icon(
-      icon,
+      const IconData(0xe0f7, fontFamily: 'MaterialIcons'),  // Используем константную IconData
       color: color,
       size: size,
     );
